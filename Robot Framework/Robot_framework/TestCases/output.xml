@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1 (Python 3.11.2 on win32)" generated="20230718 15:35:29.140" rpa="false" schemaversion="2">
+<suite id="s1" name="User Defined Withargs" source="C:\Users\158173\OneDrive - Arrow Electronics, Inc\Desktop\Robot_framework\TestCases\user_defined_withargs.robot">
+<test id="s1-t1" name="Resource file in robot">
+<kw name="start browser and Maximize" library="resources1">
+<arg>${url}</arg>
+<arg>Chrome</arg>
+<doc>This is resources1 file which is being called to main file for keywords.</doc>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${userurl}</arg>
+<arg>${inputbrowser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230718 15:35:29.568" level="INFO">Opening browser 'Chrome' to base url 'https://www.youtube.com/'.</msg>
+<status status="PASS" starttime="20230718 15:35:29.568" endtime="20230718 15:35:36.629"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230718 15:35:36.629" endtime="20230718 15:35:37.110"/>
+</kw>
+<kw name="Get Title" library="SeleniumLibrary">
+<var>${title}</var>
+<doc>Returns the title of the current page.</doc>
+<msg timestamp="20230718 15:35:37.234" level="INFO">${title} = YouTube</msg>
+<status status="PASS" starttime="20230718 15:35:37.110" endtime="20230718 15:35:37.234"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${title}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20230718 15:35:37.240" level="INFO">YouTube</msg>
+<status status="PASS" starttime="20230718 15:35:37.238" endtime="20230718 15:35:37.240"/>
+</kw>
+<status status="PASS" starttime="20230718 15:35:29.568" endtime="20230718 15:35:37.240"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@id='search']</arg>
+<arg>see you again</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230718 15:35:37.245" level="INFO">Typing text 'see you again' into text field '//input[@id='search']'.</msg>
+<status status="PASS" starttime="20230718 15:35:37.240" endtime="20230718 15:35:37.798"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230718 15:35:38.799" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230718 15:35:37.798" endtime="20230718 15:35:38.799"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//button[@id='search-icon-legacy']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230718 15:35:38.799" level="INFO">Clicking element '//button[@id='search-icon-legacy']'.</msg>
+<status status="PASS" starttime="20230718 15:35:38.799" endtime="20230718 15:35:39.031"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>4</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230718 15:35:43.034" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20230718 15:35:39.031" endtime="20230718 15:35:43.034"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>(//yt-formatted-string[@class='style-scope ytd-video-renderer'])[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230718 15:35:43.034" level="INFO">Clicking element '(//yt-formatted-string[@class='style-scope ytd-video-renderer'])[1]'.</msg>
+<status status="PASS" starttime="20230718 15:35:43.034" endtime="20230718 15:35:43.224"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>6</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230718 15:35:49.230" level="INFO">Slept 6 seconds</msg>
+<status status="PASS" starttime="20230718 15:35:43.228" endtime="20230718 15:35:49.230"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230718 15:35:52.234" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230718 15:35:49.230" endtime="20230718 15:35:52.234"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230718 15:35:52.236" endtime="20230718 15:35:54.749"/>
+</kw>
+<timeout value="30 seconds"/>
+<status status="PASS" starttime="20230718 15:35:29.568" endtime="20230718 15:35:54.751"/>
+</test>
+<doc>This file is youtube automation for playing video</doc>
+<status status="PASS" starttime="20230718 15:35:29.147" endtime="20230718 15:35:54.751"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="User Defined Withargs">User Defined Withargs</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

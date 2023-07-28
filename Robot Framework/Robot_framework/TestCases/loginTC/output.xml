@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1 (Python 3.11.2 on win32)" generated="20230509 15:07:06.064" rpa="false" schemaversion="2">
+<suite id="s1" name="Setup And Teardown Copy" source="C:\Users\158173\OneDrive - Arrow Electronics, Inc\Desktop\Robot_framework\TestCases\loginTC\setup_and_teardown copy.robot">
+<test id="s1-t1" name="Resource first file in robot">
+<kw name="Start browser and Maximize" library="resources2" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.facebook.com/</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230509 15:07:06.441" level="INFO">Opening browser 'Chrome' to base url 'https://www.facebook.com/'.</msg>
+<status status="PASS" starttime="20230509 15:07:06.440" endtime="20230509 15:07:08.816"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230509 15:07:08.817" endtime="20230509 15:07:08.947"/>
+</kw>
+<status status="PASS" starttime="20230509 15:07:06.438" endtime="20230509 15:07:08.948"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>2</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20230509 15:07:08.949" endtime="20230509 15:07:08.949"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:email</arg>
+<arg>amant89502@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230509 15:07:08.951" level="INFO">Typing text 'amant89502@gmail.com' into text field 'name:email'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230509 15:07:13.262" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=113.0.5672.64)
+</msg>
+<status status="FAIL" starttime="20230509 15:07:13.059" endtime="20230509 15:07:13.263"/>
+</kw>
+<msg timestamp="20230509 15:07:13.263" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=113.0.5672.64)
+</msg>
+<msg timestamp="20230509 15:07:13.358" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=113.0.5672.64)
+</msg>
+<status status="FAIL" starttime="20230509 15:07:08.950" endtime="20230509 15:07:13.358"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:pass</arg>
+<arg>0987654</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230509 15:07:13.360" endtime="20230509 15:07:13.360"/>
+</kw>
+<kw name="close browser window" library="resources2" type="TEARDOWN">
+<kw name="Get Title" library="SeleniumLibrary">
+<var>${title}</var>
+<doc>Returns the title of the current page.</doc>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230509 15:07:13.378" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=113.0.5672.64)
+</msg>
+<status status="FAIL" starttime="20230509 15:07:13.366" endtime="20230509 15:07:13.378"/>
+</kw>
+<msg timestamp="20230509 15:07:13.378" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=113.0.5672.64)
+</msg>
+<msg timestamp="20230509 15:07:13.386" level="INFO">${title} = None</msg>
+<msg timestamp="20230509 15:07:13.388" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=113.0.5672.64)
+</msg>
+<status status="FAIL" starttime="20230509 15:07:13.362" endtime="20230509 15:07:13.388"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${title}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230509 15:07:13.389" endtime="20230509 15:07:13.390"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230509 15:07:13.390" endtime="20230509 15:07:17.409"/>
+</kw>
+<status status="FAIL" starttime="20230509 15:07:13.362" endtime="20230509 15:07:17.410">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=113.0.5672.64)
+</status>
+</kw>
+<tag>smoke</tag>
+<status status="FAIL" starttime="20230509 15:07:06.437" endtime="20230509 15:07:17.411">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=113.0.5672.64)
+
+
+Also teardown failed:
+NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=113.0.5672.64)
+</status>
+</test>
+<test id="s1-t2" name="Resource second next test Case">
+<kw name="Start browser and Maximize" library="resources2" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.facebook.com/</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230509 15:07:17.421" level="INFO">Opening browser 'Chrome' to base url 'https://www.facebook.com/'.</msg>
+<status status="PASS" starttime="20230509 15:07:17.420" endtime="20230509 15:07:22.101"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230509 15:07:22.101" endtime="20230509 15:07:24.241"/>
+</kw>
+<status status="PASS" starttime="20230509 15:07:17.419" endtime="20230509 15:07:24.241"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>name:login</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230509 15:07:24.244" level="INFO">Clicking element 'name:login'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230509 15:07:26.292" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=113.0.5672.64)
+</msg>
+<status status="FAIL" starttime="20230509 15:07:26.283" endtime="20230509 15:07:26.292"/>
+</kw>
+<msg timestamp="20230509 15:07:26.293" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=113.0.5672.64)
+</msg>
+<msg timestamp="20230509 15:07:26.335" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=113.0.5672.64)
+</msg>
+<status status="FAIL" starttime="20230509 15:07:24.243" endtime="20230509 15:07:26.335"/>
+</kw>
+<kw name="close browser window" library="resources2" type="TEARDOWN">
+<kw name="Get Title" library="SeleniumLibrary">
+<var>${title}</var>
+<doc>Returns the title of the current page.</doc>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230509 15:07:26.346" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=113.0.5672.64)
+</msg>
+<status status="FAIL" starttime="20230509 15:07:26.339" endtime="20230509 15:07:26.347"/>
+</kw>
+<msg timestamp="20230509 15:07:26.347" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=113.0.5672.64)
+</msg>
+<msg timestamp="20230509 15:07:26.353" level="INFO">${title} = None</msg>
+<msg timestamp="20230509 15:07:26.355" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=113.0.5672.64)
+</msg>
+<status status="FAIL" starttime="20230509 15:07:26.336" endtime="20230509 15:07:26.355"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${title}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230509 15:07:26.356" endtime="20230509 15:07:26.357"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230509 15:07:26.358" endtime="20230509 15:07:30.376"/>
+</kw>
+<status status="FAIL" starttime="20230509 15:07:26.336" endtime="20230509 15:07:30.376">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=113.0.5672.64)
+</status>
+</kw>
+<tag>deft</tag>
+<status status="FAIL" starttime="20230509 15:07:17.418" endtime="20230509 15:07:30.377">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=113.0.5672.64)
+
+
+Also teardown failed:
+NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=113.0.5672.64)
+</status>
+</test>
+<doc>This file is for facebook login</doc>
+<status status="FAIL" starttime="20230509 15:07:06.066" endtime="20230509 15:07:30.382"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="2" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">deft</stat>
+<stat pass="0" fail="1" skip="0">smoke</stat>
+</tag>
+<suite>
+<stat pass="0" fail="2" skip="0" id="s1" name="Setup And Teardown Copy">Setup And Teardown Copy</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20230509 15:07:13.263" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=113.0.5672.64)
+</msg>
+<msg timestamp="20230509 15:07:13.378" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=113.0.5672.64)
+</msg>
+<msg timestamp="20230509 15:07:26.293" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=113.0.5672.64)
+</msg>
+<msg timestamp="20230509 15:07:26.347" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=113.0.5672.64)
+</msg>
+</errors>
+</robot>

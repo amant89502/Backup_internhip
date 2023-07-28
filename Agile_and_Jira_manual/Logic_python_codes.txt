@@ -1,0 +1,17 @@
+**Ill create a list which has 5 numbers, and out of 5, ill select any number at random and find the sqaure root of it,
+ if the sqaure root is not perfect number, the nearest integer will be taken.  
+And all 5 numbers's sqaure root will be append into new list.**
+
+import random
+import math
+randomlist = []
+for i in range(0,5):
+    n = random.randint(1,100)
+    randomlist.append(n)
+print(randomlist)
+
+def nearest_int(num):
+    sqrt = math.isqrt(num)
+    return sqrt
+sqroot_with_no_decimal = [nearest_int(num) for num in randomlist]
+print("Square root list:", sqroot_with_no_decimal)

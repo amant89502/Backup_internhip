@@ -1,0 +1,12 @@
+{
+    "Registration":
+    {
+        "username_textbox_email":"email",
+        "password_textbox":"pass"
+        
+    },
+    "Login":
+    {
+
+    }
+}

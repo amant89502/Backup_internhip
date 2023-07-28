@@ -1,0 +1,6 @@
+module number 73
+creating xpath with parent
+creating xpath with sibling
+lstrip()- remove the space in characters.(leading space)
+rstrip()- remove the spaces in the end.
+strip()- remove the spaces from the both sides.
